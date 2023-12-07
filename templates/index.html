@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" tyle = 'text/css' href="{{ url_for('static',filename = 'style.css')}}"
 </head>
 <body>
     <div class="login">
-       <h1>Flower Class Prediction</h1>
+       <h1 class="heading">Flower Class Prediction</h1>
    
         <!-- Main Input For Receiving Query to our ML -->
        <form action="{{ url_for('predict')}}"method="post" enctype="multipart/form-data">
@@ -17,18 +18,7 @@
    
       <br>
       <br>
-      <ol> 
-        <!-- For loop logic of jinja template -->
-        {%for i in range(0, len)%} 
-            {% if prediction[i]==0 %}
-                <p>{{i+1}}- this Employee is likely to leave the company</p>
-            {% else %}
-            <p>{{i+1}}- this Employee is likely to stay</p>
-            {% endif %}  
-        {%endfor%} 
-          
-        </ol> 
-      {{ prediction_text }}
+      
    
     </div>
    

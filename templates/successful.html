@@ -8,7 +8,7 @@
 <body>
     <ol> 
         <!-- For loop logic of jinja template -->
-        {%for i in range(0, len)%} 
+        {%for i in range(0, len(prediction))%} 
             {% if prediction[i]==0 %}
                 <p>{{i+1}}- this Employee is likely to leave the company</p>
             {% else %}
