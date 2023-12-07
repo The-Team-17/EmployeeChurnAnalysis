@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Employee Churn Analysis</title>
     <link rel = "stylesheet" tyle = 'text/css' href="{{ url_for('static',filename = 'style.css')}}"
 </head>
 <body>
     <div class="login">
-       <h1 class="heading">Flower Class Prediction</h1>
+       <h1 class="heading">Employee Churn Prediction</h1>
    
         <!-- Main Input For Receiving Query to our ML -->
        <form action="{{ url_for('predict')}}"method="post" enctype="multipart/form-data">
-           <input type="file" name="csvFile" accept=".csv" class = btn>
-           <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-       </form>
+           <input type="file" name="csvFile" accept=".csv" class = 'uploadbtn'>
+           <br>
+           <button type="submit" class="btn">Predict</button>
+       </form><div>
+        
+
+       </div>
    
       <br>
       <br>
