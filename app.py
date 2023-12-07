@@ -16,7 +16,8 @@ def predict():
     print(uploaded_file)
     df = pd.read_csv(uploaded_file)
     prediction = model.predict(df)
-    return render_template("successful.html", len = len(prediction), prediction = prediction)
+    l = len(prediction)
+    return render_template("successful.html", len = l, prediction = prediction)
 
 
 if __name__ == "__main__":
