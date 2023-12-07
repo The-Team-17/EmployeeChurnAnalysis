@@ -1,4 +1,4 @@
 Flask==3.0.0
 Numpy==1.26.2
 Gunicorn
-sklearn==1.3.2
+sklearn
