@@ -16,3 +16,14 @@ align-items: center;}
     align-content: center;
     padding-left: 30rem;
 }
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+  }
+  
+  .btn:hover {
+    background-color: #555555;
+    color: white;
+  }
