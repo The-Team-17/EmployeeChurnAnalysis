@@ -55,3 +55,11 @@ align-items: center;}
     margin-left: 11rem;
     margin-top: 2rem;
   }
+
+
+
+.bdy{
+    padding: 15rem;
+    display: grid;
+    justify-content: center;
+}

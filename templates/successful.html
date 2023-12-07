@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" tyle = 'text/css' href="{{ url_for('static',filename = 'style.css')}}">
+    <link rel = "stylesheet" tyle = 'text/css' href="{{ url_for('static',filename = 'style.css')}}"> 
 
-    <title>Document</title>
+    <title>Employee Churn Analysis</title>
 </head>
-<body>
+<body class="bdy">
+    <h1 class="heading">Prediction:</h1>
     <ol> 
         <!-- For loop logic of jinja template -->
         {%for i in range(0, len)%} 
             {% if prediction[i]==0 %}
-                <p>{{i+1}}- this Employee is likely to leave the company</p>
+                <p>{{i+1}}- This Employee is likely to leave the company</p>
             {% else %}
-            <p>{{i+1}}- this Employee is likely to stay</p>
+            <p>{{i+1}}- This Employee is likely to stay</p>
             {% endif %}  
         {%endfor%} 
           
