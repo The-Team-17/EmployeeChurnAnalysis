@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol> 
+        <!-- For loop logic of jinja template -->
+        {%for i in range(0, len)%} 
+            {% if prediction[i]==0 %}
+                <p>{{i+1}}- this Employee is likely to leave the company</p>
+            {% else %}
+            <p>{{i+1}}- this Employee is likely to stay</p>
+            {% endif %}  
+        {%endfor%} 
+          
+        </ol> 
+</body>
+</html>
